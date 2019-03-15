@@ -40,3 +40,4 @@ filewp=wp-$href.nc
 cdo -P 4 -f nc4 -z zip_1 -setattribute,wp@units="GW" -expr,'wp=((( (winhb < '$va') || (winhb > '$vc'))) ? 0 : ((winhb>'$vn') ? 1: ((winhb^3-'$va3')/('$vn3-$va3' ))    ))'  $filehub $filewp 
 
 
+# edicion importante
